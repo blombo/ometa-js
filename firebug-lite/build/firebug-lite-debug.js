@@ -10270,8 +10270,8 @@ append(ChromeBase,
         setTimeout(function(){
             self.selectPanel(Firebug.context.persistedState.selectedPanelName);
             
-            if (Firebug.context.persistedState.selectedPanelName == "Console" && Firebug.CommandLine)
-                Firebug.chrome.focusCommandLine();
+            //if (Firebug.context.persistedState.selectedPanelName == "Console" && Firebug.CommandLine)
+            //    Firebug.chrome.focusCommandLine();
         },0);
         
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
