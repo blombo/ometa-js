@@ -40,7 +40,7 @@ body {
    padding-top: 5px;
 }
 
-#source {
+.code_edit {
   font-family: monaco, monospace;
   font-size: 9pt;
 }
@@ -48,4 +48,11 @@ body {
 #proj_sel {
   float: right;
   border: 1px solid blue;
+}
+
+#cons {
+  width: 931px;
+  height: 308px;
+  display: inline-block;
+  border: black 1px solid;
 }

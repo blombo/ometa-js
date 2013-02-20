@@ -86,20 +86,20 @@ function include(fileName) {
         <div style="display: inline-block">
           <div><b>OMeta Source</b></div>
           <div>
-            <textarea id="source" cols=80 rows=25 name=source></textarea>
+            <textarea class="code_edit" id="source" cols=80 rows=25 name=source></textarea>
           </div>
         </div>
         <div style="display: inline-block">
-          <div><b>Console/Inspector</b></div>
+          <div><b>Target to Translate</b></div>
           <div>
-            <div id=cons style="width: 336px; height: 408px;display: inline-block; border: black 1px solid;"></div>
+          <textarea class="code_edit" id="test_data" cols=40 rows=25></textarea>
           </div>
         </div>
       <br>
         <div style="display: inline-block">
-          <div><b>Target to Translate</b></div>
+          <div><b>Console/Inspector</b></div>
           <div>
-          <textarea cols=40 rows=24 id=test_data style="font-family:monaco, monospace; font-size: 10pt"></textarea>
+            <div id=cons></div>
           </div>
         </div>
         <br>

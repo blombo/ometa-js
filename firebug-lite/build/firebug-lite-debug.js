@@ -9433,7 +9433,7 @@ var createChromeWindow = function(options)
             var height = persistedState.height || 300;
             
             height = Math.min(browserWinSize.height, height);
-            height = Math.max(408, height);
+            height = 308; //Math.max(308, height);
             
             node.style.border = "0";
             node.style.visibility = "hidden";
