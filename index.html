@@ -13,6 +13,7 @@
     <script src="bs-project-list-parser.js"></script>
     <script src="workspace.js"></script>
     <script src="wiki.js"></script>
+    <script type="text/javascript" src="firebug-lite/build/firebug-lite-debug.js#enableTrace,overrideConsole=false"></script>
     <script>
 
 function toggleVisible(id) {
@@ -114,7 +115,10 @@ function include(fileName) {
       <input type=button value="+/-" onClick="toggleVisible('source')">
       <br>
       <div id=source style="visibility: visible; display: block">
-        <textarea cols=132 rows=24 name=source style="font-family:monaco, monospace; font-size: 10pt"></textarea><br>
+        <textarea cols=40 rows=24 name=source style="font-family:monaco, monospace; font-size: 10pt"></textarea>
+        <textarea cols=40 rows=24 id=test_data style="font-family:monaco, monospace; font-size: 10pt"></textarea>
+        <div id=cons style="width: 336px; height: 408px;display: inline-block; border: black 1px solid;"></div>
+        <br>
         <input type=button value="print it (ctrl+p)"  onClick="printIt()"     style="margin-bottom: .4em">
         <input type=button value="do it (ctrl+d)"     onClick="doIt()"        style="margin-bottom: .4em">
         <input type=button value="save it (ctrl + s)" onClick="saveProject()" style="margin-bottom: .4em"><br>
